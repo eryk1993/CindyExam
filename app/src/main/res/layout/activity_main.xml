@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#d79b8f">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_marginLeft="16dp"
+        android:background="#e0af1f"
+        android:textColor="@android:color/white"
+  />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#3fb5b5"
+            android:onClick="decrement"
+            android:text="-"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_marginLeft="8dp"
+            android:background="#e0af1f"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:background="#3fb5b3"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/gratuity_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:text="Price = 25"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:background="#976cf4"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:id="@+id/submitOrder_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:onClick="submitOrder"
+        android:layout_gravity="center"
+        android:text="Total Price"
+        android:layout_marginBottom="30dp"
+        android:background="#976cf4"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="#e0af1f"
+        android:text="$0.00"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>
